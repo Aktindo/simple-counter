@@ -1,38 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: cadetblue;
+}
+
 .App {
   text-align: center;
+  margin-top: 15vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__counter-heading {
+  font-size: 70px;
+  color: rgb(64, 98, 99);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__button-toolbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.primary-btn {
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
   color: white;
+  background-color: teal;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.primary-btn:hover {
+  background-color: #0ab1b1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primary-btn:focus {
 }
